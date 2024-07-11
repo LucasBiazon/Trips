@@ -1,4 +1,3 @@
--- Write your migrate up statements here
 CREATE TABLE IF NOT EXISTS participants (
     "id"            uuid            PRIMARY KEY NOT NULL    DEFAULT gen_random_uuid(),
     "trip_id"       uuid                        NOT NULL,
@@ -13,3 +12,4 @@ CREATE TABLE IF NOT EXISTS participants (
 ---- create above / drop below ----
 
 DROP TABLE IF EXISTS participants;
+
